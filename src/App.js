@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import "./App.css"
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import {  Routes, Route } from "react-router-dom"
 import Header from "./common/header/Header"
 import Pages from "./pages/Pages"
 import Data from "./components/Data"
@@ -69,18 +69,18 @@ function App() {
 
   return (
     <>
-      <Router>
+      
         <Header CartItem={CartItem} />
-        <Switch>
+        <Routes>
           <Route path='/' exact>
             <Pages productItems={productItems} addToCart={addToCart} shopItems={shopItems} />
           </Route>
           <Route path='/cart' exact>
             <Cart CartItem={CartItem} addToCart={addToCart} decreaseQty={decreaseQty} />
           </Route>
-        </Switch>
+        </Routes>
         <Footer />
-      </Router>
+    
     </>
   )
 }
