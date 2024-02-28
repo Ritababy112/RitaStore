@@ -78,16 +78,19 @@
 }
 /*------search-----------*/
 .catgrories {
-  background-color: #f6f9fc;
-  padding: 0px 30px;
+  width: 20%;
+  float: left;
+  padding: 0px 0px;
   border-radius: 5px;
   height: 6vh;
   margin-top: 5px;
+  font-size: 20px;
 }
 .catgrories span {
   margin-right: 20px;
   font-size: 30px;
   margin-top: 10px;
+  color:wheat;
 }
 .catgrories h4 {
   font-weight: 500;
@@ -114,7 +117,9 @@ header ul li a {
 header ul li a:hover {
   color: #ff014f;
 }
-
+.catgrories :hover {
+  color: #ff014f;
+}
 .open {
   display: none;
 }
