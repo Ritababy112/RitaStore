@@ -16,7 +16,7 @@ body {
   padding: 50px 0;
 }
 .container {
-  max-width: 90%;
+  width: 95%;
   margin: auto;
 }
 .d_flex {
@@ -52,6 +52,10 @@ button {
   border: none;
   outline: none;
   background-color: none;
+  font-size: 18px;
+  float: left;
+  padding-left: 0%;
+  margin-left: 0%;
 }
 .row {
   width: 50%;
@@ -71,22 +75,27 @@ button {
 
 /*---------category----------*/
 .contentWidth {
-  width: 77%;
+  width: 90%;
+  margin-left: 150px;
+  float: right;
+  padding-right: 0px;
+  margin-right: 0px;
 }
 .category {
   box-shadow: rgb(43 52 69 / 10%) 0px 4px 16px;
-  background-color: #fff;
-  width: 23%;
+
   height: 510px;
   padding: 15px 0;
   border-radius: 5px;
   margin-top: 5px;
+  font-size: 15px;
 }
 .category img {
   width: 30px;
   height: 30px;
   margin-top: 10px;
   object-fit: contain;
+  color: white;
 }
 .category span {
   margin: 10px 20px;
