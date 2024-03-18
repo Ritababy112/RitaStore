@@ -5,3 +5,9 @@
 .disc{
   margin-left: -40px;
 } 
+@media (max-width: 640px){
+  .av{
+    display: flex;
+    flex-direction: column;
+  }
+}

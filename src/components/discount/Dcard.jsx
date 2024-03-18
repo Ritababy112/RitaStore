@@ -9,8 +9,8 @@ const Dcard = () => {
   const settings = {
     dots: false,
     infinite: true,
-    slidesToShow: 6,
-    slidesToScroll: 1,
+    slidesToShow: 2,
+    slidesToScroll: 2,
     autoplay: true,
   }
   return (

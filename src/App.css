@@ -303,3 +303,10 @@ button {
   align-items: center;
 }
 }
+@media (max-width: 640px){
+  .grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+}
