@@ -4,10 +4,12 @@ const Annocument = () => {
   const mystyle = {
     width: "30%",
     height: "340px",
+    overflow: "hidden",
   }
   const mystyle1 = {
     width: "68%",
     height: "340px",
+    overflow: "hidden",
   }
   return (
     <>
