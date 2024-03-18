@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
+import "./style.css"
 
 const SampleNextArrow = (props) => {
   const { onClick } = props
@@ -32,8 +33,8 @@ const FlashCard = ({ productItems, addToCart }) => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
+    slidesToShow: 2,
+    slidesToScroll: 2,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
   }
@@ -43,17 +44,17 @@ const FlashCard = ({ productItems, addToCart }) => {
       <Slider {...settings}>
         {productItems.map((productItems) => {
           return (
-            <div className='box'>
+            <div className='box av'>
               <div className='product mtop'>
                 <div className='img'>
                   <span className='discount'>{productItems.discount}% Off</span>
-                  <img src={productItems.cover} alt='' />
+                  <img className='disc' src={productItems.cover} alt='' />
                   <div className='product-like'>
                     <label>{count}</label> <br />
                     <i className='fa-regular fa-heart' onClick={increment}></i>
                   </div>
                 </div>
-                <div className='product-details'>
+                <div className='product-details '>
                   <h3>{productItems.name}</h3>
                   <div className='rate'>
                     <i className='fa fa-star'></i>

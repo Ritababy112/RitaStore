@@ -3,6 +3,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
+
 }
 html {
   scroll-behavior: smooth;
@@ -16,8 +18,13 @@ body {
   padding: 50px 0;
 }
 .container {
-  width: 95%;
+  width: 98%;
   margin: auto;
+
+}
+.Rt{
+    box-shadow: -1px 15px 17px -8px rgba(0, 0, 0, 0.1);
+    width: 100% !important;
 }
 .d_flex {
   display: flex;
@@ -25,6 +32,8 @@ body {
 }
 .c_flex {
   display: flex;
+  
+  margin-top: -10px;
   justify-content: space-between;
   align-items: center;
 }
@@ -46,6 +55,8 @@ li {
 }
 .RText {
   text-align-last: right;
+  width: 70%;
+  margin-right: 20px;
 }
 input,
 button {
@@ -58,7 +69,8 @@ button {
   margin-left: 0%;
 }
 .row {
-  width: 50%;
+  width: 30%;
+  margin-left: 20px;
 }
 .icon-circle {
   width: 50px;
@@ -75,8 +87,8 @@ button {
 
 /*---------category----------*/
 .contentWidth {
-  width: 90%;
-  margin-left: 150px;
+  width: 70%;
+  
   float: right;
   padding-right: 0px;
   margin-right: 0px;
@@ -87,7 +99,7 @@ button {
   height: 510px;
   padding: 15px 0;
   border-radius: 5px;
-  margin-top: 5px;
+  margin-top: 70px;
   font-size: 15px;
 }
 .category img {
@@ -214,10 +226,11 @@ button {
   z-index: 5;
 }
 .control-btn .prev {
-  left: -20px;
+  overflow: hidden;
 }
 .control-btn .next {
-  right: -20px;
+  right: 0px;
+  overflow: hidden;
 }
 .control-btn .prev i,
 .control-btn .next i {
@@ -255,4 +268,45 @@ button {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
+}
+@media (max-width: 800px) {
+  .Rt{
+    box-shadow:none;
+    width: 100% !important;
+}
+  .riy{
+    margin-left: 10px;
+    width: 100%;
+  }
+  .fa{
+    box-shadow: -1px 15px 17px -8px rgba(0, 0, 0, 0.1);
+  }
+  .fa1{
+    box-shadow: none;
+  }
+  .hd{
+    flex-direction: column;
+    align-items: center;
+    /* justify-content:space-evenly; */
+  }
+  .ft{
+    width: 80% !important;
+  }
+  .fh{
+    width: 50% !important;
+    margin-bottom: 10px;
+    align-items: center;
+  }
+.fs{
+  margin-top: 10px;
+  width: 50% !important;
+  align-items: center;
+}
+}
+@media (max-width: 640px){
+  .grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
 }

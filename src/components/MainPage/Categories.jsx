@@ -50,7 +50,7 @@ const Categories = () => {
 
   return (
     <>
-      <div className='category' style={{width:'fit-content', backgroundColor: 'black', marginright:'300px'}}>
+      <div className='category show' style={{width:'fit-content',}}>
         {data.map((value, index) => {
           return (
             <div className='box f_flex' key={index}>

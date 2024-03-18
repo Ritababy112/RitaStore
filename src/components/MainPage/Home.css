@@ -1,5 +1,5 @@
 .homeSlide h1 {
-  font-size: 45px;
+  font-size: 35px;
   line-height: 55px;
   margin: 50px 0 20px 0;
 }
@@ -14,6 +14,7 @@
   border: 2px solid #b8b7b7;
   border-radius: 50%;
   padding: 10px;
+  overflow: hidden;
 }
 .homeSlide ul li button {
   background: transparent !important;
@@ -26,4 +27,36 @@
   top: 2px;
   left: 0;
   margin: auto;
+}
+.right{
+  overflow-x: visible !important;
+}
+.box {
+  font-size: 12px;
+}
+
+@media (max-width: 800px) {
+  /* .show{
+    display: none;
+  } */
+  .riy{
+    margin-left: 10px;
+  }
+  
+}
+@media (max-width: 640px) {
+  /* .show{
+    display: none;
+  } */
+  .riy{
+  align-items: center;
+  width: 100%;
+  }
+  .Hfl{
+    display: flex;
+    flex-direction: column;
+  }
+  .mp{
+    width: 100%;
+  }
 }

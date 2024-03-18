@@ -8,8 +8,8 @@ const TopCart = () => {
   const settings = {
     dots: false,
     infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToShow: 2,
+    slidesToScroll: 2,
     autoplay: true,
   }
   return (
